@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+
+
+<div id="OneFoodMenu"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/1food-menu/dist/style.css"/>
+<script type="module">
+    
+    import { createMenu } from "https://cdn.jsdelivr.net/npm/1food-menu/dist/1food-menu.mjs"
+    
+    const menuData = {"products":[{"uid":"lviib6877pa9uf6q9b2","name":"Margheriza","options":[{"size":"","price":"6","salePrice":""}],"categoryId":"lvii85jp52mwlr74u8h","description":"pomodoro, mozzarella","imageUrl":"https://scattidigusto.b-cdn.net/wp-content/uploads/2018/03/Pizza-Margherita-napoletana-960x640.jpg","tags":[],"allergens":[],"inStock":null},{"uid":"lviif0nhde6xeuqc22","name":"Americana","options":[{"size":"","price":"8","salePrice":""}],"categoryId":"lvii85jp52mwlr74u8h","description":"pomodoro, mozzarella, wurstel, patatine fritte","imageUrl":"https://www.biifdeliverybg.it/wp-content/uploads/2020/05/americana.jpg","tags":[],"allergens":[],"inStock":null},{"uid":"lviig5xfw7kzu0l6vg","name":"Diavola","options":[{"size":"","price":"7","salePrice":""}],"categoryId":"lvii85jp52mwlr74u8h","description":"pomodoro, mozzarella, prosciutto cotto","imageUrl":"https://www.lucianopignataro.it/wp-content/uploads/2023/02/Elementi-Pizzeria-Diavola-480x480.png","tags":[],"allergens":[],"inStock":null},{"uid":"lviiikd9nz9s37c24ns","name":"Kebap","options":[{"size":"","price":"10","salePrice":""}],"categoryId":"lvii85jp52mwlr74u8h","description":"pomodoro, mozzarella, carne di kepab, insalata, cipolla, salsa yogurt e piccante","imageUrl":"https://us.gozney.com/cdn/shop/articles/Kebab_Pizza_Brad_Carter_2_1000x560.jpg?v=1646733777","tags":[],"allergens":[],"inStock":null},{"uid":"lviiozeni3w2lus3q4","name":"Panino doner kebap","options":[{"size":"","price":"6","salePrice":""}],"categoryId":"lviims52r9n9uxqsan","description":"carne di vitello e tacchino, insalata, pomodoro, cipolla, salsa yogurt e piccante","imageUrl":"https://cdn.ilclubdellericette.it/wp-content/uploads/2019/06/kebab-fatto-in-casa-640x480.jpg","tags":[],"allergens":[],"inStock":null},{"uid":"lviiq3gtueqex66tmk","name":"Piadina doner kebap","options":[{"size":"","price":"6","salePrice":""}],"categoryId":"lviims52r9n9uxqsan","description":"carne di vitello e tacchino, insalata, pomodoro, cipolla, salsa yogurt e piccante","imageUrl":"https://img.freepik.com/free-photo/side-view-chicken-roll-grilled-chicken-lettuce-cucumber-tomato-mayo-pita_141793-4849.jpg?size=626&ext=jpg&ga=GA1.1.1292351815.1709337600&semt=ais","tags":[],"allergens":[],"inStock":null},{"uid":"lviirx12uzvyqrf70y","name":"Doner kebap box","options":[{"size":"","price":"6","salePrice":""}],"categoryId":"lviims52r9n9uxqsan","description":"carne di doner kebap, patatine fritte, salse","imageUrl":"https://kutundoener.de/wp-content/uploads/Doener-011Box.jpg","tags":[],"allergens":[],"inStock":null},{"uid":"lviitoot18yzfde3i0i","name":"Hot Dog","options":[{"size":"","price":"2.5","salePrice":""}],"categoryId":"lviims52r9n9uxqsan","description":"carne di pollo e tacchino, ketchup","imageUrl":"https://www.ilpanificiodicamillo.it/wp-content/uploads/Storia-Hot-Dog-Americani-Ricetta-Originale-Dachshund.jpg","tags":[],"allergens":[],"inStock":null}],"categories":[{"uid":"lvii85jp52mwlr74u8h","name":"Pizze classiche ","description":""},{"uid":"lviims52r9n9uxqsan","name":"Panini e Piadine","description":""}],"allergens":[],"configs":{"title":"Pizze classiche "}}
+    
+    createMenu({
+        menu: menuData,
+        version: 1,
+        priceSymbol: '$',
+        allergens: {
+            title: 'Allergens',
+            show: true
+        }
+    });
+
+</script> 
+
+
+
+
+
+</body>
+</html>
+ 
